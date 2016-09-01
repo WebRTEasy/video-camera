@@ -10,13 +10,14 @@ const options = {
 
 https.createServer(options, (req, res) => {
   console.log(req.url);
-  let fileName = req.url;
+  let fileName = req.url.replace('/','');
 
   if (req.url === '/')
     fileName = 'index.html';
 
   fs.readFile(fileName, (err, file) => {
     if (err || !file) {
+      console.log(file, err, fileName);
       res.writeHead(404);
       res.end();
     } else {
