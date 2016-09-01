@@ -1,0 +1,25 @@
+{
+  "name": "video-camera",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_TLS_REJECT_UNAUTHORIZED=0 nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebRTEasy/video-camera.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebRTEasy/video-camera/issues"
+  },
+  "homepage": "https://github.com/WebRTEasy/video-camera#readme",
+  "dependencies": {
+    "env2": "^2.1.1",
+    "hapi": "^15.0.3",
+    "inert": "^4.0.2"
+  }
+}
